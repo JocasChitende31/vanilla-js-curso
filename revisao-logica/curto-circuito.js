@@ -7,4 +7,4 @@ console.log(n);
 isValid = false;
 
 isValid && console.log('É valido');
-isValid || console.log('Não é válido')
+isValid || console.log('Não é válido');

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        const multiplicando = prompt('Digite o multiplicando')
+        const multiplicador = prompt('Digitie o multiplicador');
+
+        let resulatado = 0;
+        document.write(`Resultado da tábuada ${multiplicando} com o cíclo FOR <br>`);
+        for (i = 1; i <= multiplicador; i++) {
+            // if(i === 4){
+            //     continue;
+            // }
+
+            document.write(`${multiplicando} X ${i} = ${(multiplicando * i)}` + '<br>');
+        }
+        document.write('Saiu do loop FOR <br> <br>');
+
+        document.write(`Resultado da tábuada de ${multiplicando} com o cíclo While <br>`);
+        let indice = 0;
+        while (indice <= multiplicador) {
+            document.write(`${multiplicando} X ${indice} = ${(multiplicando * indice)} <br>`);
+            indice++;
+        }
+        document.write('Saiu do loop While <br>');
+
+
+        do {
+            // if (indice<=13) {
+            //     alert("índice maior que 13!")
+            //     continue;
+            // }
+            document.write(`${multiplicando} X ${indice} = ${(multiplicando * indice)} <br>`);
+            indice++;
+        } while (indice <= multiplicador){
+            document.write(`${multiplicando} X ${indice} = ${(multiplicando * indice)} <br>`);
+            indice++;
+        }
+        document.write('Saiu do loop do While <br>');
+
+    </script>
+</body>
+
+</html>
