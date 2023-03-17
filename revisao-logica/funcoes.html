@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="color: red; text-align: center; font-size: 60px; ">Aula de Funções</h1>
+    <script>
+        // declaração de função
+        function ola() {
+            return document.write('Olá Mundo!');
+        }
+        ola();
+
+        // expressão de função
+        const ola2 = function () {
+            console.log('Olá Mundo de function expression');
+        }
+
+        ola2();
+
+        // errow function
+        const ola3 = () => {
+            console.log("Olá Mundo de Errow Function");
+        }
+
+        ola3();
+
+        // retirno de valores
+        function obtemDiaSemana(){
+            return new Date().getDay();
+        }
+        let dia = obtemDiaSemana();
+        console.log(dia);
+
+        function soma(n1, n2){
+            return n1+n2;
+        }
+
+       document.write(soma(2,4)) ;
+        let somar = soma(10,20);
+        console.log(somar);
+    </script>
+</body>
+
+</html>
