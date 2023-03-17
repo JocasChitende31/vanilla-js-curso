@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Tabuada</title>
+</head>
+
+<body>
+    <h1>Funções - Tabúada</h1>
+    <button onclick="mostrarTabuada()">Mostrar Tabúada</button> <button onclick="limparTabuada()">Limpar
+        Tabuada</button>
+    <div id="output"></div>
+
+    <script>
+
+
+
+        const output = document.getElementById('output');
+
+
+        function mostrarTabuada() {
+            // output.innerHTML = 'Valor Qualquer <br> pula linha '
+
+            let num1 = parseFloat(prompt(`Digite o multiplicando`));
+            let num2 = parseFloat(prompt(`Digite o multiplicador`));
+
+            console.log(typeof num1, typeof num2);
+            let tabuada = "";
+
+            for(let i= 1; i<=num2; i++){
+                tabuada += `${num1} x ${i} = ${num1 * i} <br> `;
+            }
+
+            // let i = 1;
+            // while (i <= num2) {
+            //     tabuada += `${num1} x ${i} = ${num1 * i} <br> `;
+            //     i++;
+
+            // }
+            output.innerHTML = "<p>" + tabuada + "</p>";
+
+        }
+        function limparTabuada() {
+            output.innerHTML = "<p  >Limpou a tábuada</p>";
+        }
+    </script>
+</body>
+
+</html>
