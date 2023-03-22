@@ -8,14 +8,16 @@
 
  // funções invoccáveis=>geram um escopo isolado de cada arquivo
 
-(function(){
+(function(n1,n2,n3){
 
     let isValid = true;
     console.log('menu', isValid);
-
+    
     function init(){
         console.log('init do menu');
     }
-
+    
     init();
-})();
+     
+    console.log(n1+n2+n3)
+})(10,29,20);
